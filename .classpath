@@ -51,5 +51,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xfire-jsr181-api-1.0-M1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xfire-spring-1.2.6.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/XmlSchema-1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
