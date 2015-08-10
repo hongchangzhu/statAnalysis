@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+
+	<service>
+		<name>termService</name>
+		<serviceClass>
+			com.analysis.xfire.service.ITermService
+		</serviceClass>
+		<implementationClass>
+			com.analysis.xfire.service.TermServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+</beans>

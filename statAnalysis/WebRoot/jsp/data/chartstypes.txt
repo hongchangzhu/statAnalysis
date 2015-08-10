@@ -1,0 +1,4 @@
+﻿[
+    { "id": "../fusioncharts/Column3D.swf", "text": "柱状图" },
+    { "id": "../fusioncharts/Pie3D.swf", "text": "饼图" }
+]

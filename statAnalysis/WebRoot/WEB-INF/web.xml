@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>XFireServlet</servlet-name>
+    <servlet-class>org.codehaus.xfire.transport.http.XFireConfigurableServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>XFireServlet</servlet-name>
+    <url-pattern>/services/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>termStatServlet</servlet-name>
+    <servlet-class>com.analysis.servlet.TermStatServlet</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>termStatServlet</servlet-name>
+    <url-pattern>/termStatServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>getAllRegionServlet</servlet-name>
+    <servlet-class>com.analysis.servlet.GetAllRegionServlet</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAllRegionServlet</servlet-name>
+    <url-pattern>/getAllRegionServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>getTermServlet</servlet-name>
+    <servlet-class>com.analysis.servlet.GetTermServlet</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getTermServlet</servlet-name>
+    <url-pattern>/getTermServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportDataServlet</servlet-name>
+    <servlet-class>com.analysis.servlet.ExportDataServlet</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackStageServlet</servlet-name>
+    <servlet-class>com.analysis.servlet.BackStageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSubjectDataServlet</servlet-name>
+    <servlet-class>com.analysis.servlet.GetSubjectDataServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>exportDataServlet</servlet-name>
+    <url-pattern>/exportDataServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageServlet</servlet-name>
+    <url-pattern>/backStageServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSubjectDataServlet</servlet-name>
+    <url-pattern>/getSubjectDataServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+
